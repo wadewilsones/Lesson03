@@ -5,7 +5,250 @@
     font-family: Roboto, Helvetica, sans-serif;
 }
 
+@media screen and (min-width:320px) and (max-width:599px){
 
+    /*TABLET HEADER*/
+
+    header{
+        background-color: #FFC857;
+        height: 22vh;
+    }
+    
+    header h1{
+        text-align: center;
+        font-weight: 400;
+        font-size:2em;
+        padding-top: 0.5em;
+    }
+    
+    header h2{
+        text-align: center;
+        font-weight: 300;
+        font-size: 1.5em;
+    }
+    
+    header p{
+        text-align: center;
+        width:98%;
+        margin: auto;
+        margin-top: 1.5em;
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 1.4;
+    }
+    
+    /*TABLET PROJECTS */
+
+    #projects{
+
+        background-color: #F8F4E3;
+        padding: 4em 0;
+    }
+    
+    
+    #projects h2{
+        text-align: center;
+        font-weight: 300;
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
+    
+    #projects div{
+        width:90%;
+        margin:auto;
+    }
+    
+    #projects div section{
+    
+        margin-top: 0.5em;
+        text-align: center;
+        padding: 1.5em 0;
+    }
+    
+    #travel_App_Project{
+    
+        grid-column-start:2;
+    }
+    
+    #weather_App_Project{
+    
+        grid-column-start:3;
+    }
+    
+    #projects div section h3{
+      text-align: center;
+      margin: 1em 0;
+      font-size: 1.2em;
+    }
+    
+    #projects div section img{
+    
+        border-radius: 10px;
+        width:300px;
+        display: block;
+        margin: auto;
+    }
+    
+    #projects div section a{
+    
+        text-decoration:none;
+        color: #F8F4E3;
+        background-color: #343434;
+        border-radius: 5px;
+        display: block;
+        width:100px;
+        margin: 2em auto 0;
+        text-align: center;
+        padding: 10px 30px;
+    }
+    
+    /*TABLET WORK EXPERIENCE */
+
+#work_experience_section{
+    background-color: #FFC857;
+    padding: 4em 0;
+}
+
+#work_experience_section h2{
+    text-align: center;
+    font-weight: 300;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+#work_experience_section section{
+
+    width:90%;
+    margin: auto;
+    padding: 1em 0;
+
+}
+
+#work_experience_section section h3{
+    text-align: left;
+    margin: 1em 0 0;
+    font-size: 1.6em;
+
+}
+
+#work_experience_section section h3 + p {
+
+    font-size: 1.1em;
+
+}
+
+#work_experience_section section h3 + p + p {
+
+    font-size: 1em;
+    line-height: 2;
+    font-style: italic;
+}
+
+#work_experience_section section h3 + p + p + p{
+
+    width:100%;
+    font-size: 1em;
+    grid-row-start: 3;
+}
+
+#work_experience_section section ul {
+ 
+    margin-top: 0.5em;
+    font-size:1em;
+    margin-left: 1em;
+
+
+}
+
+#work_experience_section li{
+    padding-top: 10px;
+    width:100%;
+
+    
+}
+
+
+/*TABLET EDUCATION */
+
+#education_section{
+    background-color: #F8F4E3;
+    padding: 4em 0;
+}
+
+#education_section h2{
+    text-align: center;
+    font-weight: 300;
+    font-size: 2em;
+    margin-bottom: 2em;
+}
+
+#education_section section{
+    width:90%;
+    margin: 2em auto;
+
+
+}
+
+#education_section section h3{
+    margin-left: 0
+}
+
+#education_section section p{
+    margin-left: 0;
+}
+
+#education_section section span{
+
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+
+
+/*TABLET CONTACT INFO */
+
+footer{
+    padding: 4em 0;
+    background-color: #343434;
+    color:white;
+}
+
+footer h2{
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.8em;
+    margin-bottom: 2em;
+}
+
+footer ul {
+    width:90%;
+    margin: auto;
+    display: inline-block;
+}
+
+
+
+footer ul li i{
+   text-align: center;
+   margin-bottom: 0.2em;
+   margin-left: 1em;
+   margin-right: 0.2em;
+    font-size: 36px!important;
+}
+
+
+footer ul li a {
+    color:white;
+    font-weight: 300;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+
+/*END OF TABLET SCREEN SIZE*/
+
+
+}
 
 @media screen and (min-width:600px) and (max-width:1199px){
 

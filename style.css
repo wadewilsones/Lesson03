@@ -61,7 +61,7 @@ header p{
 
 #projects div section{
 
-    margin-top: 2em;
+    margin-top: 1em;
     text-align: center;
     padding: 2em 0;
 }
@@ -85,10 +85,9 @@ header p{
 #projects div section img{
 
     border-radius: 10px;
-    width:340px;
+    width:80%;
     display: block;
     margin: auto;
-    height: 200px;
 }
 
 #projects div section a{
@@ -101,7 +100,7 @@ header p{
     width:100px;
     margin: 2em auto 0;
     text-align: center;
-    padding: 10px;
+    padding: 10px 30px;
 }
 
 

@@ -239,11 +239,24 @@ footer ul {
 }
 
 footer ul li{
-    display: inline-block;
+    display: grid;
+    grid-template-rows: 90% 10%;
 }
+
+footer ul li i{
+   text-align: center;
+   margin-bottom: 0.2em;
+    font-size: 48px!important;
+}
+
 
 footer ul li a {
     color:white;
     font-weight: 300;
     text-decoration: none;
+    grid-row-start: 2;
+}
+
+footer ul li a:hover{
+    color:#FFC857;
 }

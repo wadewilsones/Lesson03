@@ -1,4 +1,88 @@
-body{
-    width:  1000px;
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+/*DESKTOP HEADER*/
+
+
+header{
+    background-color: #FFC857;
+    height: 25vh;
+}
+
+header h1{
+    text-align: center;
+    font-weight: 300;
+    font-size:4em;
+    padding-top: 0.5em;
+}
+
+header h2{
+    text-align: center;
+    font-weight: 300;
+    font-size: 2em;
+}
+
+header p{
+    text-align: center;
+    width:70%;
     margin: auto;
+    margin-top: 1.6em;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+
+/*DESKTOP PROJECTS */
+
+.projects{
+    border:2px solid red;
+    background-color: #F8F4E3;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 10% 90%;
+}
+
+
+.projects h2{
+    text-align: center;
+    grid-column-start:1;
+    grid-column-end: 4;
+    text-align: center;
+    font-weight: 300;
+    font-size: 2em;
+}
+
+.projects section{
+    border:2px solid red;
+    margin-top: 2em;
+    grid-row-start: 2;
+    text-align: center;
+}
+
+#travel_App_Project{
+    grid-row-start: 2;
+    grid-column-start:2 ;
+}
+
+#weather_App_Project{
+
+    grid-row-start: 2;
+    grid-column-start:3;
+}
+
+.projects section a{
+
+    text-decoration:none;
+    color: #F8F4E3;
+    background-color: #343434;
+    border-radius: 5px;
+    display: block;
+    width:100px;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
 }

@@ -39,42 +39,60 @@ header p{
 /*DESKTOP PROJECTS */
 
 .projects{
-    border:2px solid red;
+
     background-color: #F8F4E3;
     display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
-    grid-template-rows: 10% 90%;
+    padding: 4em 0;
 }
 
 
 .projects h2{
     text-align: center;
-    grid-column-start:1;
-    grid-column-end: 4;
-    text-align: center;
     font-weight: 300;
     font-size: 2em;
+    margin-bottom: 2em;
 }
 
-.projects section{
-    border:2px solid red;
+.projects div{
+    width:1200px;
+    margin:auto;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+.div section{
+
     margin-top: 2em;
-    grid-row-start: 2;
     text-align: center;
+    padding: 2em 0;
 }
 
 #travel_App_Project{
-    grid-row-start: 2;
-    grid-column-start:2 ;
+
+    grid-column-start:2;
 }
 
 #weather_App_Project{
 
-    grid-row-start: 2;
     grid-column-start:3;
 }
 
-.projects section a{
+.projects div section h3{
+  text-align: center;
+  margin: 1em 0;
+  font-size: 1.5em;
+}
+
+.projects div section img{
+
+    border-radius: 10px;
+    width:340px;
+    display: block;
+    margin: auto;
+    height: 200px;
+}
+
+.projects div section a{
 
     text-decoration:none;
     color: #F8F4E3;
@@ -82,7 +100,7 @@ header p{
     border-radius: 5px;
     display: block;
     width:100px;
-    margin: auto;
+    margin: 2em auto 0;
     text-align: center;
     padding: 10px;
 }

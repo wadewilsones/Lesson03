@@ -38,29 +38,28 @@ header p{
 
 /*DESKTOP PROJECTS */
 
-.projects{
+#projects{
 
     background-color: #F8F4E3;
-    display: grid;
     padding: 4em 0;
 }
 
 
-.projects h2{
+#projects h2{
     text-align: center;
     font-weight: 300;
     font-size: 2em;
     margin-bottom: 2em;
 }
 
-.projects div{
+#projects div{
     width:1200px;
     margin:auto;
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.3%;
 }
 
-.div section{
+#projects div section{
 
     margin-top: 2em;
     text-align: center;
@@ -77,13 +76,13 @@ header p{
     grid-column-start:3;
 }
 
-.projects div section h3{
+#projects div section h3{
   text-align: center;
   margin: 1em 0;
   font-size: 1.5em;
 }
 
-.projects div section img{
+#projects div section img{
 
     border-radius: 10px;
     width:340px;
@@ -92,7 +91,7 @@ header p{
     height: 200px;
 }
 
-.projects div section a{
+#projects div section a{
 
     text-decoration:none;
     color: #F8F4E3;
@@ -103,4 +102,148 @@ header p{
     margin: 2em auto 0;
     text-align: center;
     padding: 10px;
+}
+
+
+/*DESKTOP WORK EXPERIENCE */
+
+#work_experience_section{
+    background-color: #FFC857;
+    padding: 4em 0;
+}
+
+#work_experience_section h2{
+    text-align: center;
+    font-weight: 300;
+    font-size: 2em;
+    margin-bottom: 2em;
+}
+
+#work_experience_section section{
+
+    width:1200px;
+    margin: auto;
+    display: grid;
+    padding: 1em 0;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 25% 25% 25% 25%;
+    
+}
+
+#work_experience_section section h3{
+    text-align: left;
+    margin: 1em 0 0 1em;
+    font-size: 1.5em;
+
+}
+
+#work_experience_section section h3 + p {
+
+    font-size: 1.2em;
+    margin-left: 1.3em;
+    grid-row-start: 2;
+    line-height: 2;
+}
+
+#work_experience_section section h3 + p + p {
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    align-self: center;
+    justify-self: flex-end;;
+}
+
+#work_experience_section section h3 + p + p + p{
+
+    width:60%;
+    margin-left: 1.3em;
+    font-size: 1.2em;
+    grid-row-start: 3;
+}
+
+#work_experience_section section ul {
+ 
+    margin-left: 2.8em;
+    margin-top: 0.5em;
+    grid-row-start: 4;
+    font-size: 1em;
+}
+
+#work_experience_section li{
+    padding-top: 10px;
+}
+
+
+/*DESKTOP EDUCATION */
+
+#education_section{
+    background-color: #F8F4E3;
+    padding: 4em 0;
+}
+
+#education_section h2{
+    text-align: center;
+    font-weight: 300;
+    font-size: 2em;
+    margin-bottom: 2em;
+}
+
+#education_section section{
+    width:1200px;
+    margin: 1em auto;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 80% 20%;
+
+}
+
+#education_section section h3{
+    margin-left: 2em;
+}
+
+#education_section section p{
+    margin-left: 2.4em;
+}
+
+#education_section section span{
+
+    align-self: center;
+    justify-self: flex-end;
+}
+
+
+
+/*DESKTOP CONTACT INFO */
+
+footer{
+    padding: 4em 0;
+    background-color: #343434;
+    color:white;
+}
+
+footer h2{
+    text-align: center;
+    font-weight: 300;
+    font-size: 2em;
+    margin-bottom: 2em;
+}
+
+footer ul {
+    width:1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer ul li{
+    display: inline-block;
+}
+
+footer ul li a {
+    color:white;
+    font-weight: 300;
+    text-decoration: none;
 }

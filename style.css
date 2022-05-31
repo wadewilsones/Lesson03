@@ -1,9 +1,12 @@
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
 *{
     margin:0;
     padding:0;
     border:0;
     font-family: Roboto, Helvetica, sans-serif;
 }
+
+
 
 @media screen and (min-width:320px) and (max-width:599px){
 
@@ -264,12 +267,14 @@ footer ul li a {
         font-weight: 300;
         font-size:4em;
         padding-top: 0.5em;
+        color: #343434;
     }
     
     header h2{
         text-align: center;
         font-weight: 300;
         font-size: 2em;
+       
     }
     
     header p{
@@ -351,77 +356,68 @@ footer ul li a {
     
     /*TABLET WORK EXPERIENCE */
 
-#work_experience_section{
-    background-color: #FFC857;
-    padding: 4em 0;
-}
-
-#work_experience_section h2{
-    text-align: center;
-    font-weight: 300;
-    font-size: 2em;
-    margin-bottom: 1em;
-}
-
-#work_experience_section section{
-
-    width:80%;
-    margin: auto;
-    display: grid;
-    padding: 1em 0;
-    grid-template-columns: 70% 30%;
-    grid-template-rows: 25% 25% 25% 25%;
+    #work_experience_section{
+        background-color: #FFC857;
+        padding: 4em 0;
+    }
     
-}
-
-#work_experience_section section h3{
-    text-align: left;
-    margin: 1em 0 0;
-    font-size: 1.5em;
-
-}
-
-#work_experience_section section h3 + p {
-
-    font-size: 1.1em;
-    grid-row-start: 2;
-}
-
-#work_experience_section section h3 + p + p {
-
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 2;
-    grid-column-end: 2;
-    align-self: flex-end;
-    justify-self: center;
-    font-size: 0.9em;
-}
-
-#work_experience_section section h3 + p + p + p{
-
-    width:100%;
-    font-size: 1em;
-    grid-row-start: 3;
-}
-
-#work_experience_section section ul {
- 
-    margin-left: 1em;
-    margin-top: 0.5em;
-    grid-row-start: 4;
-    font-size:0.8em;
-    grid-column-start: 1;
-    grid-column-end:2;
-
-}
-
-#work_experience_section li{
-    padding-top: 10px;
-    width:100%;
-
+    #work_experience_section h2{
+        text-align: center;
+        font-weight: 300;
+        font-size: 2em;
+        margin-bottom: 2em;
+    }
     
-}
+    #work_experience_section section{
+    
+        width:90%;
+        margin: auto;
+        padding: 1em 0;
+    
+        
+    }
+    
+    #work_experience_section section h3{
+        text-align: left;
+        margin: 1em 0 0 1em;
+        font-size: 1.5em;
+    
+    
+    }
+    
+    #work_experience_section section h3 + p {
+    
+        float: right;
+    }
+    
+    #work_experience_section section h3 + p + p {
+    
+    
+        margin-left: 1.3em;
+        font-size: 1.2em;
+        line-height: 2;
+    
+    }
+    
+    #work_experience_section section h3 + p + p + p{
+    
+        width:60%;
+        margin-left: 1.3em;
+        font-size: 1.2em;
+    
+    }
+    
+    #work_experience_section section ul {
+     
+        margin-left: 2.8em;
+        margin-top: 0.5em;
+        font-size: 1em;
+    }
+    
+    #work_experience_section li{
+        padding-top: 10px;
+    }
+    
 
 
 /*TABLET EDUCATION */
@@ -521,23 +517,67 @@ footer ul li a:hover{
 /*DESKTOP HEADER*/
 
 
+
 header{
     background-color: #FFC857;
-    height: 25vh;
+    height: 30vh;
+    padding-top: 1em;
 }
 
 header h1{
+	font-size: 4em;
     text-align: center;
-    font-weight: 300;
-    font-size:4em;
-    padding-top: 0.5em;
+    font-weight: 400;
+    margin-top: 0.5em;
 }
+
 
 header h2{
     text-align: center;
     font-weight: 300;
     font-size: 2em;
+    text-shadow:#34343456 1px 1px 7px;
 }
+
+header:hover{
+    background-color: #343434;
+    transition: 1s;
+    color: white;
+}
+
+header:hover .header-heading{
+   
+    text-decoration:solid 2px;
+    color: white;
+    transition: 1s;
+    margin-bottom: 0.2em;
+    text-shadow: .03em .03em 0 rgb(142, 146, 160);
+    -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+
+}
+
+header:hover .header-heading{
+   
+    text-decoration:solid 2px;
+    color: white;
+    transition: 1s;
+    margin-bottom: 0.2em;
+    text-shadow: .03em .08em 20 rgb(142, 146, 160);
+    -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+
+}
+
+
+ header:not(:hover) .header-heading{
+    transition: 1s;
+}
+  
 
 header p{
     text-align: center;
@@ -558,11 +598,12 @@ header p{
 }
 
 
+
 #projects h2{
     text-align: center;
     font-weight: 300;
     font-size: 2em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 #projects div{
@@ -603,6 +644,20 @@ header p{
     margin: auto;
 }
 
+#projects div section img:hover{
+
+    transition: 1s;
+    -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+#projects div section img:not(:hover){
+
+    transition: 1s;
+}
+
 #projects div section a{
 
     text-decoration:none;
@@ -616,12 +671,29 @@ header p{
     padding: 10px 30px;
 }
 
+#projects div section a:hover{
+    color: #343434;
+    background-color:#FFC857 ;
+}
 
 /*DESKTOP WORK EXPERIENCE */
 
 #work_experience_section{
     background-color: #FFC857;
     padding: 4em 0;
+}
+
+#work_experience_section:hover{
+    background-color: #343434;
+    transform:scale(1.2em);
+    transition: 1s;
+    color: white;
+    padding: 4em 0;
+
+}
+
+#work_experience_section:not(:hover){
+    transition: 1s;
 }
 
 #work_experience_section h2{
@@ -635,10 +707,8 @@ header p{
 
     width:1100px;
     margin: auto;
-    display: grid;
     padding: 1em 0;
-    grid-template-columns: 80% 20%;
-    grid-template-rows: 25% 25% 25% 25%;
+
     
 }
 
@@ -647,24 +717,20 @@ header p{
     margin: 1em 0 0 1em;
     font-size: 1.5em;
 
+
 }
 
 #work_experience_section section h3 + p {
 
-    font-size: 1.2em;
-    margin-left: 1.3em;
-    grid-row-start: 2;
-    line-height: 2;
+    float: right;
 }
 
 #work_experience_section section h3 + p + p {
 
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column-start: 2;
-    grid-column-end: 2;
-    align-self: center;
-    justify-self: center;
+
+    margin-left: 1.3em;
+    font-size: 1.2em;
+    line-height: 2;
 
 }
 
@@ -673,14 +739,13 @@ header p{
     width:60%;
     margin-left: 1.3em;
     font-size: 1.2em;
-    grid-row-start: 3;
+
 }
 
 #work_experience_section section ul {
  
     margin-left: 2.8em;
     margin-top: 0.5em;
-    grid-row-start: 4;
     font-size: 1em;
 }
 
@@ -761,6 +826,14 @@ footer ul li i{
    margin-bottom: 0.2em;
     font-size: 48px!important;
 }
+
+footer ul li i:hover{
+    text-align: center;
+    margin-bottom: 0.2em;
+     font-size: 48px!important;
+     color: #FFC857;
+    
+ }
 
 
 footer ul li a {
